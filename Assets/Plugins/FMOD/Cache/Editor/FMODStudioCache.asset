@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: ../SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639078921111022755
+  lastModified: 639080565396846623
   FileSizes:
   - Name: Desktop
     Value: 896
@@ -89,10 +89,10 @@ MonoBehaviour:
   Path: ../SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639078921111014115
+  lastModified: 639080565396840957
   FileSizes:
   - Name: Desktop
-    Value: 590464
+    Value: 590880
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -120,7 +120,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -6393291904492759885}
   cacheVersion: 131856
-  cacheTime: 639078921111022755
+  cacheTime: 639080565396846623
   SerializableEventsDict:
   - key: event:/matisse/glass
     index: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   Banks:
   - {fileID: -1901833787928292257}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
