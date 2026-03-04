@@ -69,10 +69,86 @@ MonoBehaviour:
   Path: ../SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639080565396846623
+  lastModified: 639081565819767485
   FileSizes:
   - Name: Desktop
-    Value: 896
+    Value: 1114
+  Exists: 1
+--- !u!114 &-6292086800833899936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/battlefield
+  m_EditorClassIdentifier: 
+  Path: event:/battlefield
+  Guid:
+    Data1: 1214919369
+    Data2: 1143045827
+    Data3: -1874086261
+    Data4: 1032307441
+  Banks:
+  - {fileID: -1901833787928292257}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4049520217813200666}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 119776
+--- !u!114 &-4049520217813200666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/battlefield/up
+  m_EditorClassIdentifier: 
+  Name: up
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2123921052118648343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ulykke/up
+  m_EditorClassIdentifier: 
+  Name: up
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-1901833787928292257
 MonoBehaviour:
@@ -89,10 +165,10 @@ MonoBehaviour:
   Path: ../SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639080565396840957
+  lastModified: 639081565819757460
   FileSizes:
   - Name: Desktop
-    Value: 590880
+    Value: 2902176
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -114,13 +190,17 @@ MonoBehaviour:
   - {fileID: 5543161651409891383}
   - {fileID: -6441308816155105828}
   - {fileID: -7611135428884816529}
+  - {fileID: 7887593158002166993}
+  - {fileID: 2964573432693746086}
+  - {fileID: 7787363036115127502}
+  - {fileID: -6292086800833899936}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1901833787928292257}
   StringsBanks:
   - {fileID: -6393291904492759885}
   cacheVersion: 131856
-  cacheTime: 639080565396846623
+  cacheTime: 639081565819767485
   SerializableEventsDict:
   - key: event:/matisse/glass
     index: 0
@@ -130,6 +210,90 @@ MonoBehaviour:
     index: 2
   - key: event:/matisse/violin
     index: 3
+  - key: event:/W.Freddie/notes
+    index: 4
+  - key: event:/ulykke
+    index: 5
+  - key: event:/plane
+    index: 6
+  - key: event:/battlefield
+    index: 7
+--- !u!114 &2111697377035424409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/plane/up
+  m_EditorClassIdentifier: 
+  Name: up
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2964573432693746086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ulykke
+  m_EditorClassIdentifier: 
+  Path: event:/ulykke
+  Guid:
+    Data1: 1741593429
+    Data2: 1207588684
+    Data3: -666326889
+    Data4: 1245220154
+  Banks:
+  - {fileID: -1901833787928292257}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2123921052118648343}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16000
+--- !u!114 &2966148375772330647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/notes/up
+  m_EditorClassIdentifier: 
+  Name: up
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5543161651409891383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +321,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
+--- !u!114 &7787363036115127502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/plane
+  m_EditorClassIdentifier: 
+  Path: event:/plane
+  Guid:
+    Data1: -191575645
+    Data2: 1265184661
+    Data3: 591241864
+    Data4: 1580464903
+  Banks:
+  - {fileID: -1901833787928292257}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2111697377035424409}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32000
+--- !u!114 &7887593158002166993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/W.Freddie/notes
+  m_EditorClassIdentifier: 
+  Path: event:/W.Freddie/notes
+  Guid:
+    Data1: -1326620769
+    Data2: 1156500492
+    Data3: 128174772
+    Data4: 1000715352
+  Banks:
+  - {fileID: -1901833787928292257}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2966148375772330647}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8500
 --- !u!114 &8700421388904949208
 MonoBehaviour:
   m_ObjectHideFlags: 0
