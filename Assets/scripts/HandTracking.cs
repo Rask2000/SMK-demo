@@ -7,7 +7,7 @@ public class HandTracking : MonoBehaviour
     // Start is called before the first frame update
     public UDPReceive udpReceive;
     public GameObject[] handPoints;
-    public float movementScale = 5f;
+    [SerializeField]  float movementScale = 5f;
     void Start()
     {
         
