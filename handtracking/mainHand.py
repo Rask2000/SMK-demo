@@ -1,8 +1,11 @@
+from time import time
+
 from cvzone.HandTrackingModule import HandDetector
 import cv2
 import socket
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
 print("Press 'c' to change camera, 's' to use sim video, and 'q' to quit.")
 print("Available cameras:")
 for i in range(10):
@@ -15,7 +18,7 @@ cap.set(3, 1280)
 cap.set(4, 720)
 success, img = cap.read()
 h, w, _ = img.shape
-detector = HandDetector(detectionCon=0.8, maxHands=2)
+detector = HandDetector(detectionCon=0.7, maxHands=2)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 serverAddressPort = ("127.0.0.1", 5052)
@@ -50,13 +53,13 @@ while True:
         # change camera loop through available cameras
         camera_index += 1
         cap.release()
-        cap = cv2.VideoCapture(camera_index)
+        cap = cv2.VideoCapture(camera_index,  cv2.CAP_DSHOW)
         cap.set(3, 1280)
         cap.set(4, 720)
         success, img = cap.read()
         if not success:
             camera_index = 0
-            cap = cv2.VideoCapture(camera_index)
+            cap = cv2.VideoCapture(camera_index,  cv2.CAP_DSHOW)
             cap.set(3, 1280)
             cap.set(4, 720)
             success, img = cap.read()
