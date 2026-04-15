@@ -4,6 +4,7 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
+using System.Threading.Tasks;
 
 public class UDPReceive : MonoBehaviour
 {
@@ -18,29 +19,26 @@ public class UDPReceive : MonoBehaviour
 
     public void Start()
     {
-
         receiveThread = new Thread(
-            new ThreadStart(ReceiveData));
+            new ThreadStart(ReceiveDataAsync));
         receiveThread.IsBackground = true;
         receiveThread.Start();
     }
 
-
     // receive thread
-    private void ReceiveData()
+    private void ReceiveDataAsync()
     {
 
         client = new UdpClient(port);
         while (startRecieving)
         {
-
             try
             {
                 IPEndPoint anyIP = new IPEndPoint(IPAddress.Any, 0);
                 byte[] dataByte = client.Receive(ref anyIP);
                 data = Encoding.UTF8.GetString(dataByte);
 
-                if (printToConsole) { print(data); }
+                if (printToConsole) print(data);
             }
             catch (Exception err)
             {
@@ -48,5 +46,11 @@ public class UDPReceive : MonoBehaviour
             }
         }
     }
-
+    public void OnDisable()
+    {
+        if (receiveThread != null)
+            receiveThread.Abort();
+        if (client != null)
+            client.Close();
+    }
 }
