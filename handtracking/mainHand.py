@@ -3,6 +3,14 @@ import cv2
 import socket
 
 cap = cv2.VideoCapture(0)
+print("Press 'c' to change camera, 's' to use sim video, and 'q' to quit.")
+print("Available cameras:")
+for i in range(10):
+    temp_cap = cv2.VideoCapture(i)
+    if temp_cap.isOpened():
+        print(f"Camera index {i} is available.")
+        temp_cap.release()
+
 cap.set(3, 1280)
 cap.set(4, 720)
 success, img = cap.read()
