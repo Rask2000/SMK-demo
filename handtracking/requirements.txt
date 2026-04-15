@@ -1,0 +1,3 @@
+# the current requrements for the hand tracking python code
+mediapipe==0.8.10
+opencv-python==4.5.1.48

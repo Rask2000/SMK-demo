@@ -3,6 +3,14 @@ import cv2
 import socket
 
 cap = cv2.VideoCapture(0)
+print("Press 'c' to change camera, 's' to use sim video, and 'q' to quit.")
+print("Available cameras:")
+for i in range(10):
+    temp_cap = cv2.VideoCapture(i)
+    if temp_cap.isOpened():
+        print(f"Camera index {i} is available.")
+        temp_cap.release()
+
 cap.set(3, 1280)
 cap.set(4, 720)
 success, img = cap.read()
@@ -11,6 +19,8 @@ detector = HandDetector(detectionCon=0.8, maxHands=2)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 serverAddressPort = ("127.0.0.1", 5052)
+
+camera_index = 0
 
 while True:
     # Get image frame
@@ -35,3 +45,43 @@ while True:
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
+    if key == ord('c'):
+
+        # change camera loop through available cameras
+        camera_index += 1
+        cap.release()
+        cap = cv2.VideoCapture(camera_index)
+        cap.set(3, 1280)
+        cap.set(4, 720)
+        success, img = cap.read()
+        if not success:
+            camera_index = 0
+            cap = cv2.VideoCapture(camera_index)
+            cap.set(3, 1280)
+            cap.set(4, 720)
+            success, img = cap.read()
+
+
+    if key == ord('s'):
+        # use standing video and loop it
+        cap.release()
+        cap = cv2.VideoCapture("standing.mp4")
+        cap.set(3, 1280)
+        cap.set(4, 720)
+        success, img = cap.read()
+        while True:
+            success, img = cap.read()
+            if not success:
+                cap.set(cv2.CAP_PROP_POS_FRAMES, 0)  # Loop the video
+                continue
+            hands, img = detector.findHands(img)
+            data = []
+            if hands:
+                hand = hands[0]
+                lmList = hand["lmList"]
+                for lm in lmList:
+                    data.extend([lm[0], h - lm[1], lm[2]])
+                sock.sendto(str.encode(str(data)), serverAddressPort)
+            cv2.imshow("Image", img)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
