@@ -1863,7 +1863,7 @@ MonoBehaviour:
       Data2: 1156500492
       Data3: 128174772
       Data4: 1000715352
-    Path: event:/W.Freddie/notes
+    Path: event:/KD/notes
   parameterName: up
   target: {fileID: 101137195}
   maxDistance: 1300
