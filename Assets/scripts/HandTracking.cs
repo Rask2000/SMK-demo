@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class HandTracking : MonoBehaviour
@@ -7,37 +8,70 @@ public class HandTracking : MonoBehaviour
     // Start is called before the first frame update
     public UDPReceive udpReceive;
     public GameObject[] handPoints;
+    [SerializeField]
+    private GameObject listener;
     [SerializeField] float movementScale = 5f;
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
-    void Update()
+    public void FixedUpdate()
     {
-        string data = udpReceive.data;
-
-        data = data.Remove(0, 1);
-        data = data.Remove(data.Length - 1, 1);
-        print(data);
-        string[] points = data.Split(',');
-        print(points[0]);
-
-        //0        1*3      2*3
-        //x1,y1,z1,x2,y2,z2,x3,y3,z3
-
-        for (int i = 0; i < 21; i++)
+        try
         {
+            if (udpReceive == null)
+            {
+                Debug.LogError("udpReceive is null!");
+                return;
+            }
 
-            float x = (7 - float.Parse(points[i * 3]) / 100) * movementScale;
-            float y = (float.Parse(points[i * 3 + 1]) / 100) * movementScale;
-            float z = (float.Parse(points[i * 3 + 2]) / 100) * movementScale;
+            string data = udpReceive.data;
 
-            handPoints[i].transform.localPosition = new Vector3(x, 0, y);
+            if (string.IsNullOrEmpty(data) || data.Length < 2)
+            {
+                Debug.LogWarning("Empty or too-short data received.");
+                return;
+            }
+
+            data = data.Substring(1, data.Length - 2);
+            string[] points = data.Split(',');
+
+            if (points.Length < 21 * 3)
+            {
+                Debug.LogWarning($"Not enough points: got {points.Length}, expected {21 * 3}");
+                return;
+            }
+
+            Vector3[] pointVectors = new Vector3[21];
+            for (int i = 0; i < 21; i++)
+            {
+                float x = (7 - float.Parse(points[i * 3]) / 100) * movementScale;
+                float y = (float.Parse(points[i * 3 + 1]) / 100) * movementScale;
+                float z = (float.Parse(points[i * 3 + 2]) / 100) * movementScale;
+                Debug.Log($"Point {i}: x={x}, y={y}, z={z}");
+                handPoints[i].transform.localPosition = new Vector3(x, 0, y);
+                pointVectors[i] = new Vector3(x, 0, z);
+            }
+
+            int[] averageIndices = { 7, 8, 11, 12, 15, 16, 19, 20 }; //tips of fingers
+
+            Vector3 avg = Vector3.zero;
+            foreach (int idx in averageIndices)
+            {
+                avg += handPoints[idx].transform.localPosition;
+            }
+            avg /= averageIndices.Length;
+
+            listener.transform.localPosition = avg;
+
 
         }
-
-
+        catch (System.Exception e)
+        {
+            // This will tell us EXACTLY what is crashing
+            Debug.LogError("EXCEPTION IN FixedUpdate: " + e.GetType().Name + " - " + e.Message + "\n" + e.StackTrace);
+        }
+    }
+    void OnDisable()
+    {
+        Debug.LogWarning("HandTracking was DISABLED! " + System.Environment.StackTrace);
     }
 }
