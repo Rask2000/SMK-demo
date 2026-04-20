@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{8ac3b6ce-d86a-4993-b18d-e7643002b400}">
+		<property name="assetPath">
+			<value>mvje_test/freesound_community-old-musket-bang-95873.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.6240000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{65246160-3da4-44af-89b8-c18ed93d4a67}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -46,9 +46,8 @@ public class HandTracking : MonoBehaviour
                 float x = (7 - float.Parse(points[i * 3]) / 100) * movementScale;
                 float y = (float.Parse(points[i * 3 + 1]) / 100) * movementScale;
                 float z = (float.Parse(points[i * 3 + 2]) / 100) * movementScale;
-                Debug.Log($"Point {i}: x={x}, y={y}, z={z}");
-                handPoints[i].transform.localPosition = new Vector3(x, 0, y);
-                pointVectors[i] = new Vector3(x, 0, z);
+                handPoints[i].transform.localPosition = new Vector3(x, -1, y);
+                pointVectors[i] = new Vector3(x, -1, z);
             }
 
             int[] averageIndices = { 7, 8, 11, 12, 15, 16, 19, 20 }; //tips of fingers

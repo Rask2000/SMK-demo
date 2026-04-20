@@ -5,7 +5,7 @@ using FMOD.Studio;
 public class DroneSounds : MonoBehaviour
 {
     [SerializeField] private GameObject lowValence;
-    [SerializeField] private GameObject hand;
+    [SerializeField] private GameObject trackingObj;
 
     public string eventPath;
 
@@ -22,15 +22,14 @@ public class DroneSounds : MonoBehaviour
         lowValenceInstance.start();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-  
+
         float distance = Vector3.Distance(
-            hand.transform.position,
+            trackingObj.transform.position,
             lowValence.transform.position
         );
 
-        
         normalized = Mathf.Clamp01(distance / maxDistance);
 
         lowValenceInstance.setParameterByName("up", normalized);

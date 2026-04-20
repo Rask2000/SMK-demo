@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{1f114a43-7936-47a1-83d7-228c34db7f38}">
+		<property name="name">
+			<value>Loudness</value>
+		</property>
+		<relationship name="folder">
+			<destination>{676b8e2b-c5a5-472e-8fc4-f38e7668ab71}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{e0477b8a-ec5c-4fbe-bf0f-d7566fb7f80a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{e0477b8a-ec5c-4fbe-bf0f-d7566fb7f80a}">
+		<property name="isHeld">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
