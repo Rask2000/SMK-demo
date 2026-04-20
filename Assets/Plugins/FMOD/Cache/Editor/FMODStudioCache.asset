@@ -291,10 +291,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639118553876372046
+  lastModified: 639120254356295284
   FileSizes:
   - Name: Desktop
-    Value: 3711584
+    Value: 3709568
   Exists: 1
 --- !u!114 &-1480777904128322886
 MonoBehaviour:
@@ -378,24 +378,20 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 2446811812407613244}
   cacheVersion: 131856
-  cacheTime: 639118553876392045
+  cacheTime: 639120254356317274
   SerializableEventsDict:
-  - key: event:/matisse/glass
+  - key: event:/swoosh
     index: 0
-  - key: event:/matisse/wood
+  - key: event:/KD/notes
     index: 1
-  - key: event:/ulykke
+  - key: event:/hits
     index: 2
-  - key: event:/matisse/outside
+  - key: event:/leaf
     index: 3
-  - key: event:/W.Freddie/notes
+  - key: event:/birds
     index: 4
-  - key: event:/plane
+  - key: event:/water
     index: 5
-  - key: event:/battlefield
-    index: 6
-  - key: event:/matisse/violin
-    index: 7
 --- !u!114 &401564178187218911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,7 +458,7 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639118553876392045
+  lastModified: 639120254356317274
   FileSizes:
   - Name: Desktop
     Value: 1004
