@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9166903149634038682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/birds
+  m_EditorClassIdentifier: 
+  Path: event:/KD/birds
+  Guid:
+    Data1: 1799680481
+    Data2: 1098188301
+    Data3: 283563960
+    Data4: -596178796
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -6609220706561068668}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42857
 --- !u!114 &-8845964477287344731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,7 +83,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 9.400001
   Length: 17025
---- !u!114 &-6675982654809203515
+--- !u!114 &-6609220706561068668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,24 +92,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/swoosh
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/birds/Loudness
   m_EditorClassIdentifier: 
-  Path: event:/swoosh
-  Guid:
-    Data1: 328182409
-    Data2: 1226728502
-    Data3: 400264113
-    Data4: -1028478625
-  Banks:
-  - {fileID: -1683159042452860383}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6441308816155105828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,7 +182,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 119776
---- !u!114 &-4703601288172959755
+--- !u!114 &-5846168059230339097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gun/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-4088876182353563083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,23 +216,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/leaf
+  m_Name: event:/KD/notes 3
   m_EditorClassIdentifier: 
-  Path: event:/leaf
+  Path: event:/KD/notes 3
   Guid:
-    Data1: -1198307360
-    Data2: 1311533108
-    Data3: -1259908949
-    Data4: 388696858
+    Data1: -1811018042
+    Data2: 1146337976
+    Data3: 846597277
+    Data4: -1553805870
   Banks:
   - {fileID: -1683159042452860383}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 2512001397060655578}
   MinDistance: 1
   MaxDistance: 20
-  Length: 12857
+  Length: 42857
 --- !u!114 &-4049520217813200666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +247,30 @@ MonoBehaviour:
   m_Name: parameter:/battlefield/up
   m_EditorClassIdentifier: 
   Name: up
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2394086837525409269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/swoosh/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
   StudioPath: 
   Min: 0
   Max: 1
@@ -262,9 +336,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/notes/up
+  m_Name: parameter:/notes/Loudness
   m_EditorClassIdentifier: 
-  Name: up
+  Name: Loudness
   StudioPath: 
   Min: 0
   Max: 1
@@ -291,12 +365,12 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639120254356295284
+  lastModified: 639123797189668951
   FileSizes:
   - Name: Desktop
-    Value: 3709568
+    Value: 3734496
   Exists: 1
---- !u!114 &-1480777904128322886
+--- !u!114 &-341903077610635858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -306,50 +380,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/water
+  m_Name: event:/KD/swoosh
   m_EditorClassIdentifier: 
-  Path: event:/water
+  Path: event:/KD/swoosh
   Guid:
-    Data1: -1754107420
-    Data2: 1248898244
-    Data3: -1376867160
-    Data4: -645638576
-  Banks:
-  - {fileID: -1683159042452860383}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42857
---- !u!114 &-446288358921222944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/hits
-  m_EditorClassIdentifier: 
-  Path: event:/hits
-  Guid:
-    Data1: -1077080626
-    Data2: 1342071214
-    Data3: 1952343186
-    Data4: -1189991848
+    Data1: 328182409
+    Data2: 1226728502
+    Data3: 400264113
+    Data4: -1028478625
   Banks:
   - {fileID: -1683159042452860383}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -2394086837525409269}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-240257823434390676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/hits/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,33 +438,39 @@ MonoBehaviour:
   - {fileID: 2446811812407613244}
   - {fileID: -1683159042452860383}
   EditorEvents:
-  - {fileID: -6675982654809203515}
   - {fileID: -8845964477287344731}
-  - {fileID: -446288358921222944}
-  - {fileID: -4703601288172959755}
-  - {fileID: 401564178187218911}
-  - {fileID: -1480777904128322886}
+  - {fileID: -4088876182353563083}
+  - {fileID: 2474876494667872137}
+  - {fileID: -341903077610635858}
+  - {fileID: 7392845818492018696}
+  - {fileID: 8756407517307819797}
+  - {fileID: -9166903149634038682}
+  - {fileID: 2758969490904609805}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1683159042452860383}
   StringsBanks:
   - {fileID: 2446811812407613244}
   cacheVersion: 131856
-  cacheTime: 639120254356317274
+  cacheTime: 639123797189678955
   SerializableEventsDict:
-  - key: event:/swoosh
-    index: 0
   - key: event:/KD/notes
+    index: 0
+  - key: event:/KD/notes 3
     index: 1
-  - key: event:/hits
+  - key: event:/KD/gun
     index: 2
-  - key: event:/leaf
+  - key: event:/KD/swoosh
     index: 3
-  - key: event:/birds
+  - key: event:/KD/hits
     index: 4
-  - key: event:/water
+  - key: event:/KD/leaf
     index: 5
---- !u!114 &401564178187218911
+  - key: event:/KD/birds
+    index: 6
+  - key: event:/KD/water
+    index: 7
+--- !u!114 &2098071205543446362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -401,24 +479,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/birds
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/leaf/Loudness
   m_EditorClassIdentifier: 
-  Path: event:/birds
-  Guid:
-    Data1: 1799680481
-    Data2: 1098188301
-    Data3: 283563960
-    Data4: -596178796
-  Banks:
-  - {fileID: -1683159042452860383}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42857
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2111697377035424409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,11 +533,91 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639120254356317274
+  lastModified: 639123797189678955
   FileSizes:
   - Name: Desktop
-    Value: 1004
+    Value: 1088
   Exists: 1
+--- !u!114 &2474876494667872137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/gun
+  m_EditorClassIdentifier: 
+  Path: event:/KD/gun
+  Guid:
+    Data1: 12648634
+    Data2: 1231169008
+    Data3: -1714889041
+    Data4: -1484592605
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5846168059230339097}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &2512001397060655578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/notes 3/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &2758969490904609805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/water
+  m_EditorClassIdentifier: 
+  Path: event:/KD/water
+  Guid:
+    Data1: -1754107420
+    Data2: 1248898244
+    Data3: -1376867160
+    Data4: -645638576
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4172845770590988206}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42857
 --- !u!114 &2964573432693746086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -515,6 +670,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &4172845770590988206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/water/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5543161651409891383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +721,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
+--- !u!114 &7392845818492018696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/hits
+  m_EditorClassIdentifier: 
+  Path: event:/KD/hits
+  Guid:
+    Data1: -1077080626
+    Data2: 1342071214
+    Data3: 1952343186
+    Data4: -1189991848
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -240257823434390676}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7787363036115127502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,3 +832,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10000
+--- !u!114 &8756407517307819797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/leaf
+  m_EditorClassIdentifier: 
+  Path: event:/KD/leaf
+  Guid:
+    Data1: -1198307360
+    Data2: 1311533108
+    Data3: -1259908949
+    Data4: 388696858
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2098071205543446362}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12857
