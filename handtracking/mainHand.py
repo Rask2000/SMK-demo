@@ -4,6 +4,7 @@ from cvzone.HandTrackingModule import HandDetector
 import cv2
 import socket
 
+
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
 print("Press 'c' to change camera, 's' to use sim video, and 'q' to quit.")
@@ -31,15 +32,25 @@ while True:
     # Find the hand and its landmarks
     hands, img = detector.findHands(img)  # with draw
     # hands = detector.findHands(img, draw=False)  # without draw
-    data = []
-
     if hands:
+        data = [[], []]  # data[0] = hand 1, data[1] = hand 2
+
         # Hand 1
         hand = hands[0]
-        lmList = hand["lmList"]  # List of 21 Landmark points
+        lmList = hand["lmList"]
         for lm in lmList:
-            data.extend([lm[0], h - lm[1], lm[2]])
+            data[0].extend([lm[0], h - lm[1], lm[2]])
 
+        # Hand 2
+        if len(hands) > 1:
+            hand2 = hands[1]
+            lmList2 = hand2["lmList"]
+            for lm in lmList2:
+                data[1].extend([lm[0], h - lm[1], lm[2]])
+
+        hand1_str = ";".join(map(str, data[0]))
+        hand2_str = ";".join(map(str, data[1]))
+        data = f"{hand1_str}|{hand2_str}"
         sock.sendto(str.encode(str(data)), serverAddressPort)
 
     # Display

@@ -365,10 +365,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639123797189668951
+  lastModified: 639124654742754201
   FileSizes:
   - Name: Desktop
-    Value: 3734496
+    Value: 3987552
   Exists: 1
 --- !u!114 &-341903077610635858
 MonoBehaviour:
@@ -446,13 +446,14 @@ MonoBehaviour:
   - {fileID: 8756407517307819797}
   - {fileID: -9166903149634038682}
   - {fileID: 2758969490904609805}
+  - {fileID: 612319970734281091}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1683159042452860383}
   StringsBanks:
   - {fileID: 2446811812407613244}
   cacheVersion: 131856
-  cacheTime: 639123797189678955
+  cacheTime: 639124654742774271
   SerializableEventsDict:
   - key: event:/KD/notes
     index: 0
@@ -470,6 +471,35 @@ MonoBehaviour:
     index: 6
   - key: event:/KD/water
     index: 7
+  - key: event:/KD/Intro
+    index: 8
+--- !u!114 &612319970734281091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/Intro
+  m_EditorClassIdentifier: 
+  Path: event:/KD/Intro
+  Guid:
+    Data1: -660436918
+    Data2: 1145519418
+    Data3: 1821862295
+    Data4: -531204131
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 25012
 --- !u!114 &2098071205543446362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -533,10 +563,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639123797189678955
+  lastModified: 639124654742774271
   FileSizes:
   - Name: Desktop
-    Value: 1088
+    Value: 1124
   Exists: 1
 --- !u!114 &2474876494667872137
 MonoBehaviour:

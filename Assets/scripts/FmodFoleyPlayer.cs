@@ -47,7 +47,6 @@ public class FmodFoleyPlayer : MonoBehaviour
 
         lowValenceInstance.getPlaybackState(out PLAYBACK_STATE state);
         FMOD.RESULT result = lowValenceInstance.setParameterByName("Loudness", flippedNormalized);
-        Debug.Log($"Result: {result}, value: {flippedNormalized}");
         if (state == PLAYBACK_STATE.STOPPED)
         {
             lowValenceInstance.start(); // just restart, no release/recreate
