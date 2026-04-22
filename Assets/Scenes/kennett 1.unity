@@ -3386,8 +3386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4efb1397ef2e2744980903bcc324df52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntroScene:
-    m_Handle: 0
+  IntroScene: kennett_intro
 --- !u!114 &985976447
 MonoBehaviour:
   m_ObjectHideFlags: 0
