@@ -40,7 +40,7 @@ public class HandTracking : MonoBehaviour
             Vector3 avgHand1 = CalculateAvargeFingerPosition(0, hand1Data);
             Vector3 avgHand2 = CalculateAvargeFingerPosition(1, hand2Data);
             //lerp towards the average position of the fingers, but if the hands are too far apart, lerp towards the first hand only
-            if (Vector3.Distance(avgHand1, avgHand2) > 3f)
+            if (Vector3.Distance(avgHand1, avgHand2) > 10f)
             {
                 listener.transform.localPosition = Vector3.Lerp(listener.transform.localPosition, avgHand1, Time.deltaTime * 2f);
                 return;

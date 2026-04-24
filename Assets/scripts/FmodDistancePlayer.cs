@@ -36,7 +36,13 @@ public class FmodVariableSound : MonoBehaviour
         );
         normalized = Mathf.Clamp01(distance / maxDistance);
 
-        lowValenceInstance.setParameterByName(parameterName, normalized);
+        var result = lowValenceInstance.setParameterByName(parameterName, normalized);
+        Debug.Log("Distance: " + distance + ", Normalized: " + normalized + ", FMOD Result: " + result);
+        //get the value of the parameter for debugging
+        float currentValue;
+        lowValenceInstance.getParameterByName(parameterName, out currentValue);
+        Debug.Log("Current FMOD Parameter Value: " + currentValue);
+
     }
 
     void OnDestroy()
