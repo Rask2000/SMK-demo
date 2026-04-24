@@ -1,4 +1,5 @@
 {
+    "version": 1,
     "name": "InputSystem_Actions",
     "maps": [
         {
@@ -986,6 +987,34 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Quick_actions",
+            "id": "dbfac132-15fd-4e34-8fe7-def2eba71e38",
+            "actions": [
+                {
+                    "name": "Switch_to_intro",
+                    "type": "Button",
+                    "id": "5d3953c4-ef42-4097-b6ba-905c4d11f67b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8d937d3e-53e7-49e0-be31-b07879c6a9b7",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch_to_intro",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

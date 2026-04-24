@@ -1,8 +1,18 @@
 from time import time
 
-from cvzone.HandTrackingModule import HandDetector
 import cv2
 import socket
+import mediapipe as mp
+mp_drawing = mp.solutions.drawing_utils
+mp_drawing_styles = mp.solutions.drawing_styles
+mp_hands = mp.solutions.hands
+
+mp_pose = mp.solutions.pose
+hands = mp_hands.Hands(
+    model_complexity=1,
+    min_detection_confidence=0.3,
+    min_tracking_confidence=0.2
+    )
 
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
@@ -16,9 +26,8 @@ for i in range(10):
 
 cap.set(3, 1280)
 cap.set(4, 720)
-success, img = cap.read()
-h, w, _ = img.shape
-detector = HandDetector(detectionCon=0.7, maxHands=2)
+success, image = cap.read()
+h, w, _ = image.shape
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 serverAddressPort = ("127.0.0.1", 5052)
@@ -26,65 +35,53 @@ serverAddressPort = ("127.0.0.1", 5052)
 camera_index = 0
 
 while True:
-    # Get image frame
-    success, img = cap.read()
-    # Find the hand and its landmarks
-    hands, img = detector.findHands(img)  # with draw
-    # hands = detector.findHands(img, draw=False)  # without draw
-    data = []
+    # Get img frame
+    success, image = cap.read()
+    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    image_rgb.flags.writeable = False
 
-    if hands:
-        # Hand 1
-        hand = hands[0]
-        lmList = hand["lmList"]  # List of 21 Landmark points
-        for lm in lmList:
-            data.extend([lm[0], h - lm[1], lm[2]])
+    results = hands.process(image_rgb)
 
-        sock.sendto(str.encode(str(data)), serverAddressPort)
+    # Draw the hand annotations on the image.
+    image.flags.writeable = True
+    image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    if results.multi_hand_landmarks:
+        for hand_landmarks in results.multi_hand_landmarks:
+            mp_drawing.draw_landmarks(
+                image,
+                hand_landmarks,
+                mp_hands.HAND_CONNECTIONS,
+                mp_drawing_styles.get_default_hand_landmarks_style(),
+                mp_drawing_styles.get_default_hand_connections_style())
+        data = [[], []]  # data[0] = hand 1, data[1] = hand 2
 
-    # Display
-    cv2.imshow("Image", img)
-    
+        for i, hand_landmarks in enumerate(results.multi_hand_landmarks[:2]):  # max 2 hands
+            for lm in hand_landmarks.landmark:
+                x = int(lm.x * w)
+                y = int(h - (lm.y * h))  
+                z = int(lm.z * w)
+                data[i].extend([x, y, z])
+
+        hand1_str = ";".join(map(str, data[0]))
+        hand2_str = ";".join(map(str, data[1]))
+        packet = f"{hand1_str}|{hand2_str}"
+        sock.sendto(str.encode(packet), serverAddressPort)
+    # Flip the image horizontally for a selfie-view display.
+    cv2.imshow('MediaPipe Hands', cv2.flip(image, 1))
     key = cv2.waitKey(1)
     if key == ord('q'):
-        break
+        break 
     if key == ord('c'):
-
         # change camera loop through available cameras
         camera_index += 1
         cap.release()
         cap = cv2.VideoCapture(camera_index,  cv2.CAP_DSHOW)
         cap.set(3, 1280)
         cap.set(4, 720)
-        success, img = cap.read()
+        success, image = cap.read()
         if not success:
             camera_index = 0
             cap = cv2.VideoCapture(camera_index,  cv2.CAP_DSHOW)
             cap.set(3, 1280)
             cap.set(4, 720)
-            success, img = cap.read()
-
-
-    if key == ord('s'):
-        # use standing video and loop it
-        cap.release()
-        cap = cv2.VideoCapture("standing.mp4")
-        cap.set(3, 1280)
-        cap.set(4, 720)
-        success, img = cap.read()
-        while True:
-            success, img = cap.read()
-            if not success:
-                cap.set(cv2.CAP_PROP_POS_FRAMES, 0)  # Loop the video
-                continue
-            hands, img = detector.findHands(img)
-            data = []
-            if hands:
-                hand = hands[0]
-                lmList = hand["lmList"]
-                for lm in lmList:
-                    data.extend([lm[0], h - lm[1], lm[2]])
-                sock.sendto(str.encode(str(data)), serverAddressPort)
-            cv2.imshow("Image", img)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+            success, image = cap.read()
