@@ -234,7 +234,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18359
---- !u!114 &-5438795097285312544
+--- !u!114 &-5113053267634608289
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,9 +244,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Potseller Gizeh/jewelry
+  m_Name: event:/Potseller Gizeh/necklace
   m_EditorClassIdentifier: 
-  Path: event:/Potseller Gizeh/jewelry
+  Path: event:/Potseller Gizeh/necklace
   Guid:
     Data1: -1364605031
     Data2: 1086885121
@@ -255,13 +255,41 @@ MonoBehaviour:
   Banks:
   - {fileID: -1683159042452860383}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 585129888164477728}
+  - {fileID: 5070741144683000881}
   MinDistance: 1
   MaxDistance: 20
-  Length: 8961
+  Length: 4675
+--- !u!114 &-4288495511871884794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/bracelet
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/bracelet
+  Guid:
+    Data1: 141035752
+    Data2: 1133962335
+    Data3: 510455201
+    Data4: 449483737
+  Banks:
+  - {fileID: -1683159042452860383}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 7083830268669904523}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4675
 --- !u!114 &-4049520217813200666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -445,10 +473,34 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639135839683990456
+  lastModified: 639135878337430990
   FileSizes:
   - Name: Desktop
-    Value: 15739584
+    Value: 15765664
+  Exists: 1
+--- !u!114 &-832882872209266506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/wind/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-341903077610635858
 MonoBehaviour:
@@ -501,7 +553,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -832882872209266506}
   MinDistance: 1
   MaxDistance: 20
   Length: 70129
@@ -585,15 +638,16 @@ MonoBehaviour:
   - {fileID: -331849980428722763}
   - {fileID: 1481146640606765363}
   - {fileID: -3386890923496249223}
-  - {fileID: -5438795097285312544}
   - {fileID: -295567872686502408}
+  - {fileID: -5113053267634608289}
+  - {fileID: -4288495511871884794}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1683159042452860383}
   StringsBanks:
   - {fileID: 2446811812407613244}
   cacheVersion: 131856
-  cacheTime: 639135839684006146
+  cacheTime: 639135878337444901
   SerializableEventsDict:
   - key: event:/KD/notes
     index: 0
@@ -619,34 +673,12 @@ MonoBehaviour:
     index: 10
   - key: event:/Potseller Gizeh/pots
     index: 11
-  - key: event:/Potseller Gizeh/jewelry
-    index: 12
   - key: event:/Potseller Gizeh/drone/face
+    index: 12
+  - key: event:/Potseller Gizeh/necklace
     index: 13
---- !u!114 &585129888164477728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/jewelry/Loudness
-  m_EditorClassIdentifier: 
-  Name: Loudness
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2476290722
-    data2: 3901547186
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  - key: event:/Potseller Gizeh/bracelet
+    index: 14
 --- !u!114 &1481146640606765363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,10 +770,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639135839684006146
+  lastModified: 639135878337444901
   FileSizes:
   - Name: Desktop
-    Value: 1358
+    Value: 1408
   Exists: 1
 --- !u!114 &2474876494667872137
 MonoBehaviour:
@@ -899,6 +931,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5070741144683000881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/necklace/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5543161651409891383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,6 +982,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
+--- !u!114 &7083830268669904523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bracelet/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7249984168348920107
 MonoBehaviour:
   m_ObjectHideFlags: 0

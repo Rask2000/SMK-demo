@@ -705,6 +705,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217689853}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &223037495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1776286969}
+    m_Modifications:
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: eventPath
+      value: event:/Potseller Gizeh/wind
+      objectReference: {fileID: 0}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: maxDistance
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: trackingObj
+      value: 
+      objectReference: {fileID: 1858395946}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492646043206311580, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_Name
+      value: wind
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
 --- !u!1 &279236233
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +990,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 362346911}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &378820316 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+  m_PrefabInstance: {fileID: 1802295529}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &390163896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1469,7 +1543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
-      value: 12
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: trackingObj
@@ -1477,7 +1551,7 @@ PrefabInstance:
       objectReference: {fileID: 1858395946}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.6
+      value: 13.5
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1485,7 +1559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.3
+      value: -4.14
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2310,11 +2384,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
-      value: event:/Potseller Gizeh/jewelry
+      value: event:/Potseller Gizeh/necklace
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
-      value: 3.8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: trackingObj
@@ -2330,7 +2404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.3
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3223,6 +3297,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976498580}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &978655022 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+  m_PrefabInstance: {fileID: 223037495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &985976445
 GameObject:
   m_ObjectHideFlags: 0
@@ -4935,11 +5014,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
-      value: event:/Potseller Gizeh/jewelry
+      value: event:/Potseller Gizeh/bracelet
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
-      value: 3.8
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: trackingObj
@@ -4947,7 +5026,7 @@ PrefabInstance:
       objectReference: {fileID: 1858395946}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.37
+      value: 11.1
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4955,7 +5034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.83
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5132,7 +5211,7 @@ Transform:
   m_GameObject: {fileID: 1708027806}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.84, y: 0, z: 0.96}
+  m_LocalPosition: {x: -7.84, y: -1, z: 0.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5288,11 +5367,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
-      value: event:/Potseller Gizeh/jewelry
+      value: event:/Potseller Gizeh/bracelet
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
-      value: 3.8
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: trackingObj
@@ -5300,7 +5379,7 @@ PrefabInstance:
       objectReference: {fileID: 1858395946}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.25
+      value: -14.1
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5308,7 +5387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.12
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5489,9 +5568,80 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 978655022}
+  - {fileID: 378820316}
   - {fileID: 1223353501}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1802295529
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1776286969}
+    m_Modifications:
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: eventPath
+      value: event:/Potseller Gizeh/pots
+      objectReference: {fileID: 0}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: maxDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: trackingObj
+      value: 
+      objectReference: {fileID: 1858395946}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -11.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492646043206311580, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: m_Name
+      value: pots
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
 --- !u!1 &1805831000
 GameObject:
   m_ObjectHideFlags: 0
