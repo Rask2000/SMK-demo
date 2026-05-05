@@ -445,10 +445,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639135132444339561
+  lastModified: 639135839683990456
   FileSizes:
   - Name: Desktop
-    Value: 15739968
+    Value: 15739584
   Exists: 1
 --- !u!114 &-341903077610635858
 MonoBehaviour:
@@ -593,7 +593,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 2446811812407613244}
   cacheVersion: 131856
-  cacheTime: 639135132444370289
+  cacheTime: 639135839684006146
   SerializableEventsDict:
   - key: event:/KD/notes
     index: 0
@@ -738,7 +738,7 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639135132444370289
+  lastModified: 639135839684006146
   FileSizes:
   - Name: Desktop
     Value: 1358
