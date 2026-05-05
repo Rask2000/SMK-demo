@@ -14,6 +14,12 @@ hands = mp_hands.Hands(
     )
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
+# For webcam input:
+#cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+#for use on mac, use cap = cv2.VideoCapture(0) without cv2.CAP_DSHOW
+# cap = cv2.VideoCapture(0)
+
 print("Press 'c' to change camera, and 'q' to quit.")
 print("Available cameras:")
 for i in range(10):
