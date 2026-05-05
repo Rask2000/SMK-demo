@@ -7,16 +7,14 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
-mp_pose = mp.solutions.pose
 hands = mp_hands.Hands(
     model_complexity=1,
     min_detection_confidence=0.3,
     min_tracking_confidence=0.2
     )
-
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
-print("Press 'c' to change camera, 's' to use sim video, and 'q' to quit.")
+print("Press 'c' to change camera, and 'q' to quit.")
 print("Available cameras:")
 for i in range(10):
     temp_cap = cv2.VideoCapture(i)
@@ -28,8 +26,8 @@ cap.set(3, 1280)
 cap.set(4, 720)
 success, image = cap.read()
 h, w, _ = image.shape
-
-sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+# setup upd server   
+sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
 serverAddressPort = ("127.0.0.1", 5052)
 
 camera_index = 0
