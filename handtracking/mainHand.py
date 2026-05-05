@@ -14,7 +14,11 @@ hands = mp_hands.Hands(
     min_tracking_confidence=0.2
     )
 
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+# For webcam input:
+#cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+#for use on mac, use cap = cv2.VideoCapture(0) without cv2.CAP_DSHOW
+cap = cv2.VideoCapture(0)
 
 print("Press 'c' to change camera, 's' to use sim video, and 'q' to quit.")
 print("Available cameras:")
