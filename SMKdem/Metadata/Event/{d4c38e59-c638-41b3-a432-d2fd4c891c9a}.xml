@@ -197,7 +197,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{d8f7844b-5e9b-4e5b-897c-bd9614f3c7b5}">
 		<property name="volume">
-			<value>-12</value>
+			<value>-14</value>
 		</property>
 		<property name="name">
 			<value>bass</value>
@@ -324,7 +324,7 @@
 	<object class="MixerBusFader" id="{e6c92d5a-07cb-462f-ad96-c31203fde4b3}" />
 	<object class="ThreeEQEffect" id="{1e8ad2e0-65df-4015-8077-72beff5ce5e8}">
 		<property name="lowGain">
-			<value>-2</value>
+			<value>-6.5</value>
 		</property>
 	</object>
 	<object class="GainEffect" id="{5e2853b5-3d70-4e3e-8dbd-19d7c1f48883}">
@@ -486,15 +486,15 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-12</value>
+			<value>-10</value>
 		</property>
 		<property name="curveShape">
-			<value>0.0116486819</value>
+			<value>-0.101554073</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{fda6ec21-0c37-4214-8a47-8899b0003d0b}">
 		<property name="position">
-			<value>0.65000000000000002</value>
+			<value>0.70000000000000007</value>
 		</property>
 		<property name="value">
 			<value>-1</value>

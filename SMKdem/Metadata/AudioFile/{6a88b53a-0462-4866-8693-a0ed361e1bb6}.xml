@@ -5,13 +5,13 @@
 			<value>badminton hit 2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>96</value>
+			<value>48</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.46875</value>
+			<value>0.51864583333333336</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{65246160-3da4-44af-89b8-c18ed93d4a67}</destination>

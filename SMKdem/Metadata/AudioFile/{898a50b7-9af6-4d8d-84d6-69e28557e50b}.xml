@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{a73788b6-1116-4e36-8fc7-88c4e0acc2bb}">
+	<object class="AudioFile" id="{898a50b7-9af6-4d8d-84d6-69e28557e50b}">
 		<property name="assetPath">
-			<value>badminton hit 3.wav</value>
+			<value>badminton hit 7.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.46875</value>
+			<value>0.5357291666666667</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{65246160-3da4-44af-89b8-c18ed93d4a67}</destination>
