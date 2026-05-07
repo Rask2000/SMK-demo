@@ -71,10 +71,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639137750424786389
+  lastModified: 639137761805906448
   FileSizes:
   - Name: Desktop
-    Value: 17738848
+    Value: 17795968
   Exists: 1
 --- !u!114 &-7611135428884816529
 MonoBehaviour:
@@ -612,10 +612,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639137750424870103
+  lastModified: 639137761805989115
   FileSizes:
   - Name: Desktop
-    Value: 1580
+    Value: 1632
   Exists: 1
 --- !u!114 &-2813664512828761342
 MonoBehaviour:
@@ -1096,13 +1096,14 @@ MonoBehaviour:
   - {fileID: 7055934725171125534}
   - {fileID: 7870472503838139292}
   - {fileID: -2003577667968211552}
+  - {fileID: 4930775716877441420}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8680094738349457132}
   StringsBanks:
   - {fileID: -3052146042233819004}
   cacheVersion: 131856
-  cacheTime: 639137750424870103
+  cacheTime: 639137761805989115
   SerializableEventsDict:
   - key: event:/Potseller Gizeh/cloth
     index: 0
@@ -1142,6 +1143,8 @@ MonoBehaviour:
     index: 17
   - key: event:/Potseller Gizeh/silk
     index: 18
+  - key: event:/KD/breathe KD
+    index: 19
 --- !u!114 &200801388701231036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,6 +1609,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 174545
+--- !u!114 &4930775716877441420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/breathe KD
+  m_EditorClassIdentifier: 
+  Path: event:/KD/breathe KD
+  Guid:
+    Data1: 638858559
+    Data2: 1213539687
+    Data3: -570780523
+    Data4: -548168975
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8458912926990110930}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5792
 --- !u!114 &5008203929017346711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,6 +2145,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/breathe/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8458912926990110930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/breathe KD/Loudness
   m_EditorClassIdentifier: 
   Name: Loudness
   StudioPath: 
