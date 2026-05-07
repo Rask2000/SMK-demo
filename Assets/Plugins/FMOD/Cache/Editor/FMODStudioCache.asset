@@ -71,7 +71,7 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639137500245996855
+  lastModified: 639137504620213871
   FileSizes:
   - Name: Desktop
     Value: 17370240
@@ -612,7 +612,7 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639137500246015417
+  lastModified: 639137504620247424
   FileSizes:
   - Name: Desktop
     Value: 1546
@@ -1049,7 +1049,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -3052146042233819004}
   cacheVersion: 131856
-  cacheTime: 639137500246015417
+  cacheTime: 639137504620247424
   SerializableEventsDict:
   - key: event:/Potseller Gizeh/cloth
     index: 0
