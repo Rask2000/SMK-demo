@@ -151,8 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a9cdf49b8663c41a9b5e8ab3ed3174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventPath: event:/KD/Intro DA
-  scene: kennett 1
+  eventPath: event:/KD/Intro
+  scene: Egyptian pot seller at Gizeh
 --- !u!64 &242009778
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -28,6 +28,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 42857
+--- !u!114 &-9106753033607462755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/birds
+  m_EditorClassIdentifier: 
+  Path: event:/KD/birds
+  Guid:
+    Data1: 1799680481
+    Data2: 1098188301
+    Data3: 283563960
+    Data4: -596178796
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 336504589960386331}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42857
 --- !u!114 &-8845964477287344731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56,6 +84,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 34285
+--- !u!114 &-8680094738349457132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: SMKdem/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639136768284353145
+  FileSizes:
+  - Name: Desktop
+    Value: 16220928
+  Exists: 1
+--- !u!114 &-7672920317515288779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/breathe
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/breathe
+  Guid:
+    Data1: 1240987418
+    Data2: 1183008235
+    Data3: -2025802090
+    Data4: 941347692
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3876749519161685219}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 18359
 --- !u!114 &-7611135428884816529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +159,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 9.400001
   Length: 17025
+--- !u!114 &-6612636805854814655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/pots
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/pots
+  Guid:
+    Data1: -1473702764
+    Data2: 1282261563
+    Data3: -16953984
+    Data4: 1122654510
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6376745369985044150}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10909
 --- !u!114 &-6609220706561068668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +198,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/birds/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6469396509250247722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/wind_top_left/Loudness
   m_EditorClassIdentifier: 
   Name: Loudness
   StudioPath: 
@@ -153,6 +281,30 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1114
+  Exists: 1
+--- !u!114 &-6376745369985044150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/pots/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-6292086800833899936
 MonoBehaviour:
@@ -234,6 +386,62 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18359
+--- !u!114 &-5524795134386866643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/hits
+  m_EditorClassIdentifier: 
+  Path: event:/KD/hits
+  Guid:
+    Data1: -1077080626
+    Data2: 1342071214
+    Data3: 1952343186
+    Data4: -1189991848
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 5288518981478184039}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5323763896248650389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/water
+  m_EditorClassIdentifier: 
+  Path: event:/KD/water
+  Guid:
+    Data1: -1754107420
+    Data2: 1248898244
+    Data3: -1376867160
+    Data4: -645638576
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4952275992250548200}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34285
 --- !u!114 &-5113053267634608289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,6 +470,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4675
+--- !u!114 &-4524698322311187436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/notes
+  m_EditorClassIdentifier: 
+  Path: event:/KD/notes
+  Guid:
+    Data1: -1326620769
+    Data2: 1156500492
+    Data3: 128174772
+    Data4: 1000715352
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4249652733796867286}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34285
 --- !u!114 &-4288495511871884794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +550,82 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-3876749519161685219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/breathe/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3663482495187464718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/necklace/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3458486491330571140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/wind_top_left
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/wind_top_left
+  Guid:
+    Data1: 1942435473
+    Data2: 1132420085
+    Data3: -1502312825
+    Data4: 751525251
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6469396509250247722}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32353
 --- !u!114 &-3386890923496249223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +654,78 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10909
+--- !u!114 &-3092746062399317892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/drone/chord
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/drone/chord
+  Guid:
+    Data1: -725381543
+    Data2: 1102300728
+    Data3: -36556124
+    Data4: -1709405876
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -376136269220644145}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 174545
+--- !u!114 &-3052146042233819004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: SMKdem/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639136768284387828
+  FileSizes:
+  - Name: Desktop
+    Value: 1496
+  Exists: 1
+--- !u!114 &-2517743627129055734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/leaf/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2473394921078698539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,6 +842,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-1710647767466196826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/cloth/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-1683159042452860383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,6 +886,62 @@ MonoBehaviour:
   - Name: Desktop
     Value: 15766304
   Exists: 1
+--- !u!114 &-1504022853875020065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/drone/face
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/drone/face
+  Guid:
+    Data1: 1855179943
+    Data2: 1337479730
+    Data3: -1460486264
+    Data4: 1700548255
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4887942576465142019}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 174545
+--- !u!114 &-1262118264991454173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/necklace
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/necklace
+  Guid:
+    Data1: -1364605031
+    Data2: 1086885121
+    Data3: 1155221171
+    Data4: 1540744551
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3663482495187464718}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4675
 --- !u!114 &-832882872209266506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -489,6 +953,30 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/wind/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-376136269220644145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/chord/Loudness
   m_EditorClassIdentifier: 
   Name: Loudness
   StudioPath: 
@@ -623,62 +1111,144 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 2446811812407613244}
-  - {fileID: -1683159042452860383}
+  - {fileID: -3052146042233819004}
+  - {fileID: -8680094738349457132}
   EditorEvents:
-  - {fileID: -8845964477287344731}
-  - {fileID: 2474876494667872137}
-  - {fileID: -341903077610635858}
-  - {fileID: 7392845818492018696}
-  - {fileID: 8756407517307819797}
-  - {fileID: -9166903149634038682}
-  - {fileID: 2758969490904609805}
-  - {fileID: 7871639411062216789}
-  - {fileID: -5668161137142218243}
-  - {fileID: -331849980428722763}
-  - {fileID: 1481146640606765363}
-  - {fileID: -3386890923496249223}
-  - {fileID: -295567872686502408}
-  - {fileID: -5113053267634608289}
-  - {fileID: -4288495511871884794}
+  - {fileID: -7672920317515288779}
+  - {fileID: 5755655014337160850}
+  - {fileID: 792142433529619249}
+  - {fileID: -3092746062399317892}
+  - {fileID: 5577065696310854424}
+  - {fileID: -6612636805854814655}
+  - {fileID: -1262118264991454173}
+  - {fileID: -4524698322311187436}
+  - {fileID: -1504022853875020065}
+  - {fileID: 3206643694191380900}
+  - {fileID: -5524795134386866643}
+  - {fileID: 7768031112879424466}
+  - {fileID: -9106753033607462755}
+  - {fileID: -5323763896248650389}
+  - {fileID: 3731683140010457605}
+  - {fileID: 3379876411309848510}
+  - {fileID: -3458486491330571140}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1683159042452860383}
+  - {fileID: -8680094738349457132}
   StringsBanks:
-  - {fileID: 2446811812407613244}
+  - {fileID: -3052146042233819004}
   cacheVersion: 131856
-  cacheTime: 639136662454355629
+  cacheTime: 639136768284387828
   SerializableEventsDict:
-  - key: event:/KD/notes
-    index: 0
-  - key: event:/KD/gun
-    index: 1
-  - key: event:/KD/swoosh
-    index: 2
-  - key: event:/KD/hits
-    index: 3
-  - key: event:/KD/leaf
-    index: 4
-  - key: event:/KD/birds
-    index: 5
-  - key: event:/KD/water
-    index: 6
-  - key: event:/KD/Intro DA
-    index: 7
   - key: event:/Potseller Gizeh/breathe
-    index: 8
+    index: 0
+  - key: event:/KD/Intro DA
+    index: 1
   - key: event:/Potseller Gizeh/wind
-    index: 9
+    index: 2
   - key: event:/Potseller Gizeh/drone/chord
-    index: 10
+    index: 3
+  - key: event:/KD/swoosh
+    index: 4
   - key: event:/Potseller Gizeh/pots
-    index: 11
-  - key: event:/Potseller Gizeh/drone/face
-    index: 12
+    index: 5
   - key: event:/Potseller Gizeh/necklace
+    index: 6
+  - key: event:/KD/notes
+    index: 7
+  - key: event:/Potseller Gizeh/drone/face
+    index: 8
+  - key: event:/KD/gun
+    index: 9
+  - key: event:/KD/hits
+    index: 10
+  - key: event:/KD/leaf
+    index: 11
+  - key: event:/KD/birds
+    index: 12
+  - key: event:/KD/water
     index: 13
   - key: event:/Potseller Gizeh/bracelet
     index: 14
+  - key: event:/Potseller Gizeh/cloth
+    index: 15
+  - key: event:/Potseller Gizeh/wind_top_left
+    index: 16
+--- !u!114 &336504589960386331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/birds/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &792142433529619249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/wind
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/wind
+  Guid:
+    Data1: 950268237
+    Data2: 1112063859
+    Data3: -721057640
+    Data4: 1230015720
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1020253687291148427}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 70129
+--- !u!114 &1020253687291148427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/wind/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &1481146640606765363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,6 +1325,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2296808759733444932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/bracelet/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2446811812407613244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +1397,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12857
+--- !u!114 &2559227728962320589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/swoosh/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2758969490904609805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,7 +1525,163 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &3206643694191380900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/gun
+  m_EditorClassIdentifier: 
+  Path: event:/KD/gun
+  Guid:
+    Data1: 12648634
+    Data2: 1231169008
+    Data3: -1714889041
+    Data4: -1484592605
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6151531512536348671}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12857
+--- !u!114 &3379876411309848510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/cloth
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/cloth
+  Guid:
+    Data1: -1368529126
+    Data2: 1227331478
+    Data3: -703482189
+    Data4: 176104409
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1710647767466196826}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21875
+--- !u!114 &3731683140010457605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/bracelet
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/bracelet
+  Guid:
+    Data1: 141035752
+    Data2: 1133962335
+    Data3: 510455201
+    Data4: 449483737
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2296808759733444932}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4675
 --- !u!114 &4172845770590988206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/water/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4249652733796867286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/notes/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4887942576465142019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/face/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4952275992250548200
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -955,6 +1729,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &5288518981478184039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/hits/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &5543161651409891383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +1780,85 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
+--- !u!114 &5577065696310854424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/swoosh
+  m_EditorClassIdentifier: 
+  Path: event:/KD/swoosh
+  Guid:
+    Data1: 328182409
+    Data2: 1226728502
+    Data3: 400264113
+    Data4: -1028478625
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2559227728962320589}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5892
+--- !u!114 &5755655014337160850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/Intro DA
+  m_EditorClassIdentifier: 
+  Path: event:/KD/Intro DA
+  Guid:
+    Data1: -660436918
+    Data2: 1145519418
+    Data3: 1821862295
+    Data4: -531204131
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 126000
+--- !u!114 &6151531512536348671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/gun/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7083830268669904523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,6 +1935,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7768031112879424466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/KD/leaf
+  m_EditorClassIdentifier: 
+  Path: event:/KD/leaf
+  Guid:
+    Data1: -1198307360
+    Data2: 1311533108
+    Data3: -1259908949
+    Data4: 388696858
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2517743627129055734}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 40714
 --- !u!114 &7787363036115127502
 MonoBehaviour:
   m_ObjectHideFlags: 0
