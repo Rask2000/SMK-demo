@@ -71,7 +71,7 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639137504620213871
+  lastModified: 639137691557502889
   FileSizes:
   - Name: Desktop
     Value: 17370240
@@ -612,7 +612,7 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639137504620247424
+  lastModified: 639137691557564145
   FileSizes:
   - Name: Desktop
     Value: 1546
@@ -1037,19 +1037,19 @@ MonoBehaviour:
   - {fileID: 895488044095682650}
   - {fileID: 4615669290069790439}
   - {fileID: -3390525819977369112}
-  - {fileID: 370821733721454742}
   - {fileID: -2183532946799766625}
   - {fileID: 1009612153683187574}
   - {fileID: 7580230870347362484}
   - {fileID: -5123426092968791826}
   - {fileID: 7055934725171125534}
+  - {fileID: 7870472503838139292}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8680094738349457132}
   StringsBanks:
   - {fileID: -3052146042233819004}
   cacheVersion: 131856
-  cacheTime: 639137504620247424
+  cacheTime: 639137691557564145
   SerializableEventsDict:
   - key: event:/Potseller Gizeh/cloth
     index: 0
@@ -1075,17 +1075,17 @@ MonoBehaviour:
     index: 10
   - key: event:/KD/gun
     index: 11
-  - key: event:/Intro DA (egyptian)
-    index: 12
   - key: event:/KD/hits
-    index: 13
+    index: 12
   - key: event:/KD/leaf
-    index: 14
+    index: 13
   - key: event:/KD/birds
-    index: 15
+    index: 14
   - key: event:/KD/water
-    index: 16
+    index: 15
   - key: event:/Potseller Gizeh/bracelet
+    index: 16
+  - key: event:/Potseller Gizeh/Intro DA (egyptian)
     index: 17
 --- !u!114 &200801388701231036
 MonoBehaviour:
@@ -1115,33 +1115,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18359
---- !u!114 &370821733721454742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Intro DA (egyptian)
-  m_EditorClassIdentifier: 
-  Path: event:/Intro DA (egyptian)
-  Guid:
-    Data1: 1674643898
-    Data2: 1340441605
-    Data3: -1276247161
-    Data4: -993620021
-  Banks:
-  - {fileID: -8680094738349457132}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 106660
 --- !u!114 &398455454162292690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,6 +1966,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 32000
+--- !u!114 &7870472503838139292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/Intro DA (egyptian)
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/Intro DA (egyptian)
+  Guid:
+    Data1: 1674643898
+    Data2: 1340441605
+    Data3: -1276247161
+    Data4: -993620021
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 106660
 --- !u!114 &7871639411062216789
 MonoBehaviour:
   m_ObjectHideFlags: 0
