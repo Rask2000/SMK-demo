@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 242009780}
   - component: {fileID: 242009779}
   - component: {fileID: 242009778}
-  - component: {fileID: 242009776}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -139,20 +138,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &242009776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242009775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86a9cdf49b8663c41a9b5e8ab3ed3174, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventPath: event:/KD/Intro
-  scene: Egyptian pot seller at Gizeh
 --- !u!64 &242009778
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -255,6 +240,7 @@ GameObject:
   - component: {fileID: 617227189}
   - component: {fileID: 617227188}
   - component: {fileID: 617227187}
+  - component: {fileID: 617227191}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -386,6 +372,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617227191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617227186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86a9cdf49b8663c41a9b5e8ab3ed3174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventPath: event:/Intro DA (egyptian)
+  scene: Egyptian pot seller at Gizeh
 --- !u!1 &1811508364
 GameObject:
   m_ObjectHideFlags: 0
