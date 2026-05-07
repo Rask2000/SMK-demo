@@ -129,11 +129,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
-      value: event:/Potseller Gizeh/cloth
+      value: event:/Potseller Gizeh/silk
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
-      value: 3
+      value: 7.4
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: trackingObj
@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 1858395946}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.3
+      value: -2.48
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4988,11 +4988,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
-      value: event:/Potseller Gizeh/cloth
+      value: event:/Potseller Gizeh/silk
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
-      value: 6
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: trackingObj
@@ -5000,7 +5000,7 @@ PrefabInstance:
       objectReference: {fileID: 1858395946}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12
+      value: -10.53
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5008,7 +5008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.6
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 4346075536503812734, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: m_LocalRotation.w

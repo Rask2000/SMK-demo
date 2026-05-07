@@ -71,10 +71,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639137691557502889
+  lastModified: 639137750424786389
   FileSizes:
   - Name: Desktop
-    Value: 17370240
+    Value: 17738848
   Exists: 1
 --- !u!114 &-7611135428884816529
 MonoBehaviour:
@@ -612,10 +612,10 @@ MonoBehaviour:
   Path: SMKdem/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639137691557564145
+  lastModified: 639137750424870103
   FileSizes:
   - Name: Desktop
-    Value: 1546
+    Value: 1580
   Exists: 1
 --- !u!114 &-2813664512828761342
 MonoBehaviour:
@@ -741,6 +741,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-2003577667968211552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Potseller Gizeh/silk
+  m_EditorClassIdentifier: 
+  Path: event:/Potseller Gizeh/silk
+  Guid:
+    Data1: -178750464
+    Data2: 1298956795
+    Data3: -711275851
+    Data4: 1624646114
+  Banks:
+  - {fileID: -8680094738349457132}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1675272710576132563}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 31168
 --- !u!114 &-1901833787928292257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,6 +832,30 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 15766304
+  Exists: 1
+--- !u!114 &-1675272710576132563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/silk/Loudness
+  m_EditorClassIdentifier: 
+  Name: Loudness
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2476290722
+    data2: 3901547186
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-1613961382942766578
 MonoBehaviour:
@@ -1043,13 +1095,14 @@ MonoBehaviour:
   - {fileID: -5123426092968791826}
   - {fileID: 7055934725171125534}
   - {fileID: 7870472503838139292}
+  - {fileID: -2003577667968211552}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8680094738349457132}
   StringsBanks:
   - {fileID: -3052146042233819004}
   cacheVersion: 131856
-  cacheTime: 639137691557564145
+  cacheTime: 639137750424870103
   SerializableEventsDict:
   - key: event:/Potseller Gizeh/cloth
     index: 0
@@ -1087,6 +1140,8 @@ MonoBehaviour:
     index: 16
   - key: event:/Potseller Gizeh/Intro DA (egyptian)
     index: 17
+  - key: event:/Potseller Gizeh/silk
+    index: 18
 --- !u!114 &200801388701231036
 MonoBehaviour:
   m_ObjectHideFlags: 0
