@@ -5,7 +5,7 @@ using FMOD.Studio;
 
 public class FmodFoleyPlayer : MonoBehaviour
 {
-    [SerializeField] private GameObject trackingObj;
+    [SerializeField] private GameObject listener;
 
     public string eventPath;
 
@@ -18,7 +18,7 @@ public class FmodFoleyPlayer : MonoBehaviour
 
     private bool isDebugMode;
 
-    private EventInstance lowValenceInstance;
+    private EventInstance instance;
 
     private GameObject sphere;
 
@@ -31,25 +31,25 @@ public class FmodFoleyPlayer : MonoBehaviour
         }
 
         //has to be last or later code will not be run;
-        lowValenceInstance = RuntimeManager.CreateInstance(eventPath);
-        lowValenceInstance.setParameterByName("Loudness", 0f);
-        lowValenceInstance.start();
+        instance = RuntimeManager.CreateInstance(eventPath);
+        instance.setParameterByName("Loudness", 0f);
+        instance.start();
     }
 
     void Update()
     {
         float distance = Vector3.Distance(
-            transform.position,
-            trackingObj.transform.position
+            this.transform.position,
+            listener.transform.position
         );
         normalized = Mathf.Clamp01(distance / maxDistance);
         var flippedNormalized = 1 - normalized;
 
-        lowValenceInstance.getPlaybackState(out PLAYBACK_STATE state);
-        FMOD.RESULT result = lowValenceInstance.setParameterByName("Loudness", flippedNormalized);
+        instance.getPlaybackState(out PLAYBACK_STATE state);
+        FMOD.RESULT result = instance.setParameterByName("Loudness", flippedNormalized);
         if (state == PLAYBACK_STATE.STOPPED)
         {
-            lowValenceInstance.start(); // just restart, no release/recreate
+            instance.start(); // just restart, no release/recreate
         }
         if (isDebugMode && sphere != null)
         {
@@ -65,14 +65,14 @@ public class FmodFoleyPlayer : MonoBehaviour
         sphere.transform.localScale = new Vector3(maxDistance * 2, maxDistance * 2, maxDistance * 2);
         debugMaterial = new Material(debugMaterial);
         sphere.GetComponent<Renderer>().material = debugMaterial;
-        sphere.transform.SetParent(transform);
+        sphere.transform.SetParent(this.transform);
         sphere.transform.localPosition = Vector3.zero;
     }
 
     void OnDestroy()
     {
-        lowValenceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        lowValenceInstance.release();
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.release();
     }
 
 

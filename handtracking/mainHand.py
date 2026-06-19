@@ -7,7 +7,6 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 
-mp_pose = mp.solutions.pose
 hands = mp_hands.Hands(
     model_complexity=1,
     min_detection_confidence=0.3,

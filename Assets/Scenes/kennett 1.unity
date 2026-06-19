@@ -1037,6 +1037,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1776286969}
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
       value: event:/KD/swoosh
       objectReference: {fileID: 0}
@@ -2372,8 +2376,8 @@ Transform:
   m_GameObject: {fileID: 747188398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 1, w: -0.00000058114523}
-  m_LocalPosition: {x: -1.0609, y: -1, z: 8.8}
-  m_LocalScale: {x: 2.0466356, y: 1, z: 0.68031}
+  m_LocalPosition: {x: -2, y: -1, z: 8.8}
+  m_LocalScale: {x: 2.4729497, y: 1, z: 0.68031}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123855488}
@@ -2411,8 +2415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2a18121e36f634da3536e2403f59ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowValence: {fileID: 747188398}
-  trackingObj: {fileID: 1858395946}
+  listener: {fileID: 1858395946}
   boxColliderObj: {fileID: 747188400}
   parameterName: Loudness
   eventPath: event:/KD/notes
@@ -2602,6 +2605,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1776286969}
     m_Modifications:
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
       value: event:/KD/hits
@@ -2938,8 +2945,6 @@ GameObject:
   - component: {fileID: 961739753}
   - component: {fileID: 961739752}
   - component: {fileID: 961739750}
-  - component: {fileID: 961739754}
-  - component: {fileID: 961739755}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3050,58 +3055,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.70710695, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 7, y: -54, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &961739754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonRigidbodyVelocity: 0
-  attenuationObject: {fileID: 1858395946}
---- !u!114 &961739755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961739749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1799680481
-      Data2: 1098188301
-      Data3: 283563960
-      Data4: -596178796
-    Path: event:/KD/birds
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &962086249
 GameObject:
   m_ObjectHideFlags: 0
@@ -4625,6 +4585,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1776286969}
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
       value: event:/KD/water
       objectReference: {fileID: 0}
@@ -4920,6 +4884,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1223353501}
     m_Modifications:
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
       value: event:/KD/leaf
       objectReference: {fileID: 0}
@@ -5096,6 +5064,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223353501}
     m_Modifications:
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
       value: event:/KD/leaf
@@ -5449,6 +5421,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1223353501}
     m_Modifications:
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: eventPath
       value: event:/KD/leaf
@@ -5887,6 +5863,8 @@ GameObject:
   - component: {fileID: 1858395949}
   - component: {fileID: 1858395948}
   - component: {fileID: 1858395947}
+  - component: {fileID: 1858395952}
+  - component: {fileID: 1858395951}
   m_Layer: 0
   m_Name: listener
   m_TagString: Untagged
@@ -5983,6 +5961,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 911959082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1858395951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858395946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1799680481
+      Data2: 1098188301
+      Data3: 283563960
+      Data4: -596178796
+    Path: event:/KD/birds
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1858395952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858395946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 1858395946}
 --- !u!1 &1984763937
 GameObject:
   m_ObjectHideFlags: 0
@@ -6315,6 +6338,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1776286969}
     m_Modifications:
+    - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
+      propertyPath: listener
+      value: 
+      objectReference: {fileID: 1858395946}
     - target: {fileID: 723809643570356842, guid: 2087f73ea0bda3e4e810b34b7ca3e50f, type: 3}
       propertyPath: maxDistance
       value: 6

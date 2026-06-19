@@ -2,10 +2,9 @@ using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
 
-public class FmodVariableSound : MonoBehaviour
+public class FmodDistancePlayer : MonoBehaviour
 {
-    [SerializeField] private GameObject lowValence;
-    [SerializeField] private GameObject trackingObj;
+    [SerializeField] private GameObject listener;
 
     [SerializeField] private BoxCollider boxColliderObj;
 
@@ -18,32 +17,30 @@ public class FmodVariableSound : MonoBehaviour
     [Range(0f, 1f)]
     public float normalized = 0f;
 
-    private EventInstance lowValenceInstance;
+    private EventInstance instance;
 
     void Start()
     {
-        lowValenceInstance = RuntimeManager.CreateInstance(eventPath);
-        lowValenceInstance.start();
+        instance = RuntimeManager.CreateInstance(eventPath);
+        instance.start();
     }
 
     public void FixedUpdate()
     {
-        Vector3 ClosestPoint = boxColliderObj.ClosestPoint(trackingObj.transform.position);
+        Vector3 ClosestPoint = boxColliderObj.ClosestPoint(listener.transform.position);
 
         float distance = Vector3.Distance(
-            trackingObj.transform.position,
+            listener.transform.position,
             ClosestPoint
         );
         normalized = Mathf.Clamp01(distance / maxDistance);
 
-        lowValenceInstance.setParameterByName(parameterName, normalized);
+        instance.setParameterByName(parameterName, normalized);
     }
 
     void OnDestroy()
     {
-        lowValenceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        lowValenceInstance.release();
+        instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        instance.release();
     }
-
-
 }

@@ -29,8 +29,26 @@ public class HandTracking : MonoBehaviour
             string data = udpReceive.data;
 
             string[] hands = data.Split('|');
+
+
+
             string hand1Data = hands[0];
-            string hand2Data = hands.Length > 1 ? hands[1] : "";
+
+
+
+            string hand2Data = "";
+
+
+            // string hand2Data = hands.Length > 1 ? hands[1] : "";
+            if (hands.Length > 1)
+            {
+                hand2Data = hands[1];
+            }
+            else
+            {
+                hand2Data = "";
+            }
+
             string[] hand1PointsData = hand1Data.Split(';');
             string[] hand2PointsData = hand2Data.Split(';');
 
